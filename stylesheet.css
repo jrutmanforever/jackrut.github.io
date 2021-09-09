@@ -7,7 +7,29 @@ p {
         text-align: center;
 }
 .video {
-        align-content: center;
-        height: 480px;
-        width: 640px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+.title {
+        font-family: 'Stylish', sans-serif;
+        text-align: center;
+        background-color: lightgreen;
+        color: yellow;
+        font-size: 50px;
+        padding-block: 30px;
+        position: 0;
+}
+.heading {
+        font-size: 25px;
+        font-family: 'Stylish', sans-serif;
+        text-align: center;
+        background-color: lightgreen;
+        color: yellow;
+        font-size: 20px;
+        padding-block: 30px;
+        position: 0;
+}
+.text-center {
+        padding-top: 500px;
 }
