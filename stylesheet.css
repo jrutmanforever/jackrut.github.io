@@ -10,6 +10,8 @@ p {
         display: flex;
         justify-content: center;
         align-items: center;
+        padding-bottom: 15px;
+        padding-top: 15px;
 }
 .title {
         font-family: 'Stylish', sans-serif;
@@ -17,7 +19,7 @@ p {
         background-color: lightgreen;
         color: yellow;
         font-size: 50px;
-        padding-block: 30px;
+        padding-top: 7px;
         position: 0;
 }
 .heading {
@@ -26,10 +28,26 @@ p {
         text-align: center;
         background-color: lightgreen;
         color: yellow;
-        font-size: 20px;
-        padding-block: 30px;
+        font-size: 30px;
+        padding-bottom: 10px;
         position: 0;
 }
 .text-center {
         padding-top: 500px;
 }
+img.monke {
+        padding-block: 0px;
+}
+.second {
+        padding-top: 20px;
+        padding-bottom: 20px;
+}
+.container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+.banana {
+        height: 180px;
+        width: 225px;
+        padding-block: 100px;
