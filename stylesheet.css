@@ -1,0 +1,13 @@
+body {
+        background-image: url("Chimp.jpg");
+      }
+p {
+        font-family: Arial;
+        background-color: wheat;
+        text-align: center;
+}
+.video {
+        align-content: center;
+        height: 480px;
+        width: 640px;
+}
