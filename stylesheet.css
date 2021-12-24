@@ -1,52 +1,55 @@
-body {
-        background-image: url("Chimp.jpg");
-      }
-p {
-        font-family: Arial;
-        background-color: wheat;
-        text-align: center;
-}
-.video {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-bottom: 15px;
-        padding-top: 15px;
-}
-.title {
-        font-family: 'Stylish', sans-serif;
-        text-align: center;
-        background-color: lightgreen;
-        color: yellow;
-        font-size: 50px;
-        padding-top: 7px;
-        position: 0;
-}
-.heading {
-        font-size: 20px;
-        font-family: 'Stylish', sans-serif;
-        text-align: center;
-        color: yellow;
-        font-size: 30px;
-        padding-bottom: 10px;
-        position: 0;
-}
 .text-center {
-        padding-top: 500px;
-}
-img.monke {
-        padding-block: 0px;
-}
-.second {
-        padding-top: 20px;
-        padding-bottom: 20px;
-}
-.container {
+        text-align: center;
+      }
+.audio-container {
         display: flex;
         justify-content: center;
         align-items: center;
+      }
+.header {
+        font-family: 'Oswald', sans-serif;
+        font-size:120px;
+        text-align: center;
+        margin: 5px;
 }
-.banana {
-        height: 180px;
-        width: 225px;
-        padding-block: 100px;
+.header:hover {
+        background-color: lightgray;
+      }
+[href]:hover {
+        background-color: lightgray;
+}
+#paypal:hover {
+        background-color: lightgray;
+}
+.header-link {
+        color:#000000; text-decoration:none
+}
+.blog-body {
+        background-color: lightgray;
+}
+.blog-header {
+        font-family: 'Oswald', sans-serif;
+        font-size:40px;
+        text-align: center;   
+}
+.text-header { 
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px;
+        text-align: left;
+        padding-left: 15%;
+        padding-right: 15%;
+}
+.blog-text {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px;
+        text-align: left;
+        text-indent: 10%;
+        padding-left: 15%;
+        padding-right: 15%;
+}
+.list-text {
+        text-indent: 10%;
+}
+.item-head {
+        font-weight: bold;
+}
