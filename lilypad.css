@@ -8,32 +8,45 @@ body, h1, h2, h3, h4, h5, h6, p, ul, li {
 body {
   font-family: Arial, sans-serif;
   background-color: #f9dbea; /* Light pink background */
-}
-
-/* Center content horizontally and vertically */
-body, header, main, footer {
+  line-height: 1.5; /* Set the line height for better readability */
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  padding: 20px;
 }
 
-/* Top Header */
 .top-header {
   background-color: #fff; /* White background */
+  width: 100%;
   padding: 10px 0; /* Add padding to the top and bottom of the header */
+  margin-bottom: 20px; /* Add margin at the bottom of the header */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .header-content {
   max-width: 960px; /* Adjust the maximum width as needed */
   margin: 0 auto; /* Center the content within the header */
+}
+
+.logo {
+  margin-bottom: 10px; /* Add margin at the bottom of the logo */
   display: flex;
-  justify-content: space-between; /* Align items to the edges */
-  align-items: center;
+  justify-content: center; /* Center the logo horizontally */
+}
+
+.logo img {
+  width: 50px; /* Adjust the width of the logo */
+  height: 50px; /* Adjust the height of the logo */
+  object-fit: contain; /* Maintain aspect ratio */
 }
 
 .menu {
   list-style: none;
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 
@@ -44,26 +57,47 @@ body, header, main, footer {
 .menu li a {
   text-decoration: none;
   color: #333; /* Adjust the link color */
-  font-size: 18px; /* Adjust the font size */
+  font-size: 16px; /* Set the default font size for the menu */
 }
 
-.logo {
-  width: 50px;
-  height: 50px;
-  margin-right: 10px;
+/* Media query for mobile devices */
+@media only screen and (max-width: 767px) {
+  .top-header {
+    width: 100%; /* Set the top header width to 100% */
+  }
+
+  .banner {
+    padding: 20px 0; /* Adjust the banner padding to create space on the sides */
+  }
+
+  .small-menu {
+    flex-wrap: wrap; /* Allow the small menu items to wrap to a new line */
+    justify-content: center; /* Center the small menu horizontally */
+  }
+
+  .small-menu li {
+    white-space: nowrap; /* Prevent the small menu items from wrapping */
+    margin: 0 5px; /* Adjust the spacing between small menu items */
+  }
+
+  .small-menu li a {
+    font-size: 14px; /* Adjust the font size for small menu items */
+  }
 }
 
-/* Banner */
+
 .banner {
   background-color: #fff; /* White background */
   padding: 20px; /* Add padding to the banner */
   margin-bottom: 20px; /* Add margin at the bottom of the banner */
-  max-width: 100%; /* Adjust the maximum width of the banner */
-  box-sizing: border-box; /* Include padding in the width calculation */
 }
 
 .banner-card {
-  margin-bottom: 20px; /* Add margin at the bottom of each banner card */
+  display: none; /* Hide all banner cards by default */
+}
+
+.banner-card.active {
+  display: block; /* Display only the active banner card */
 }
 
 .banner-content {
@@ -73,10 +107,10 @@ body, header, main, footer {
 
 .banner-card img {
   width: 100%; /* Make the banner images fill the container */
+  max-width: 1000px; /* Limit the maximum width of the banner images to 1000px */
   height: auto; /* Maintain aspect ratio */
 }
 
-/* Latest Article */
 .latest-article {
   padding: 20px; /* Add padding to the latest article section */
   margin-bottom: 20px; /* Add margin at the bottom of the latest article section */
@@ -84,23 +118,23 @@ body, header, main, footer {
 
 .article-content {
   /* Add styles for the article content */
+  margin-bottom: 20px; /* Add margin at the bottom of the article content */
 }
 
 .show-more {
   /* Add styles for the show more link */
 }
 
-/* Footer */
 footer {
   background-color: #fff; /* White background */
   padding: 10px 0; /* Add padding to the top and bottom of the footer */
+  margin-top: 20px; /* Add margin at the top of the footer */
 }
 
 .small-menu {
   list-style: none;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap; /* Allow items to wrap to a new line */
 }
 
 .small-menu li {
