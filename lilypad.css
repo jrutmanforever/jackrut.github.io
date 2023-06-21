@@ -63,7 +63,7 @@ body {
 /* Media query for mobile devices */
 @media only screen and (max-width: 767px) {
   .top-header {
-    width: 100vw; /* Extend the top header to the full width of the viewport */
+    width: 100%; /* Set the top header width to 100% */
   }
 
   .banner {
@@ -71,9 +71,20 @@ body {
   }
 
   .small-menu {
-    justify-content: center; /* Center the bottom menu horizontally */
+    flex-wrap: wrap; /* Allow the small menu items to wrap to a new line */
+    justify-content: center; /* Center the small menu horizontally */
+  }
+
+  .small-menu li {
+    white-space: nowrap; /* Prevent the small menu items from wrapping */
+    margin: 0 5px; /* Adjust the spacing between small menu items */
+  }
+
+  .small-menu li a {
+    font-size: 14px; /* Adjust the font size for small menu items */
   }
 }
+
 
 .banner {
   background-color: #fff; /* White background */
