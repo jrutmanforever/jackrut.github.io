@@ -61,16 +61,16 @@ body {
 }
 
 /* Media query for mobile devices */
-@media (max-width: 600px) {
-  .menu li a {
-    font-size: 14px; /* Decrease the font size for mobile devices */
+@media only screen and (max-width: 767px) {
+  .menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
   }
-  /* Media query for Android phones */
-@media only screen and (max-width: 480px) and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
-  .menu li a {
-    font-size: 14px; /* Decrease the font size for Android phones */
+
+  .menu li {
+    margin: 10px 0;
   }
-}
 }
 
 .banner {
