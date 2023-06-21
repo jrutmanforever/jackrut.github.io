@@ -46,18 +46,25 @@ body {
 .menu {
   list-style: none;
   display: flex;
-  align-items: center; /* Align the menu items vertically in the center */
+  justify-content: center;
+  align-items: center;
 }
 
 .menu li {
   margin: 0 10px; /* Adjust the spacing between menu items */
-  font-size: 1.2em; /* Adjust the font size of the menu text */
-  text-align: center; /* Center the menu text */
 }
 
 .menu li a {
   text-decoration: none;
   color: #333; /* Adjust the link color */
+  font-size: 16px; /* Set the default font size for the menu */
+}
+
+/* Media query for mobile devices */
+@media (max-width: 600px) {
+  .menu li a {
+    font-size: 14px; /* Decrease the font size for mobile devices */
+  }
 }
 
 .banner {
