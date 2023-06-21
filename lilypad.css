@@ -1,0 +1,121 @@
+/* Reset some default styles to ensure consistency */
+body, h1, h2, h3, h4, h5, h6, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set up basic styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9dbea; /* Light pink background */
+  line-height: 1.5; /* Set the line height for better readability */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.top-header {
+  background-color: #fff; /* White background */
+  width: 100%;
+  padding: 10px 0; /* Add padding to the top and bottom of the header */
+  margin-bottom: 20px; /* Add margin at the bottom of the header */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-content {
+  max-width: 960px; /* Adjust the maximum width as needed */
+  margin: 0 auto; /* Center the content within the header */
+}
+
+.logo {
+  margin-bottom: 10px; /* Add margin at the bottom of the logo */
+  display: flex;
+  justify-content: center; /* Center the logo horizontally */
+}
+
+.logo img {
+  width: 50px; /* Adjust the width of the logo */
+  height: 50px; /* Adjust the height of the logo */
+  object-fit: contain; /* Maintain aspect ratio */
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  align-items: center; /* Align the menu items vertically in the center */
+}
+
+.menu li {
+  margin: 0 10px; /* Adjust the spacing between menu items */
+  font-size: 1.2em; /* Adjust the font size of the menu text */
+  text-align: center; /* Center the menu text */
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #333; /* Adjust the link color */
+}
+
+.banner {
+  background-color: #fff; /* White background */
+  padding: 20px; /* Add padding to the banner */
+  margin-bottom: 20px; /* Add margin at the bottom of the banner */
+}
+
+.banner-card {
+  display: none; /* Hide all banner cards by default */
+}
+
+.banner-card.active {
+  display: block; /* Display only the active banner card */
+}
+
+.banner-content {
+  max-width: 1000px; /* Set the maximum width of the banner content */
+  margin: 0 auto; /* Center the banner content */
+}
+
+.banner-card img {
+  width: 100%; /* Make the banner images fill the container */
+  max-width: 1000px; /* Limit the maximum width of the banner images to 1000px */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.latest-article {
+  padding: 20px; /* Add padding to the latest article section */
+  margin-bottom: 20px; /* Add margin at the bottom of the latest article section */
+}
+
+.article-content {
+  /* Add styles for the article content */
+  margin-bottom: 20px; /* Add margin at the bottom of the article content */
+}
+
+.show-more {
+  /* Add styles for the show more link */
+}
+
+footer {
+  background-color: #fff; /* White background */
+  padding: 10px 0; /* Add padding to the top and bottom of the footer */
+  margin-top: 20px; /* Add margin at the top of the footer */
+}
+
+.small-menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.small-menu li {
+  margin: 0 10px; /* Adjust the spacing between menu items */
+}
+
+.small-menu li a {
+  text-decoration: none;
+  color: #333; /* Adjust the link color */
+}
